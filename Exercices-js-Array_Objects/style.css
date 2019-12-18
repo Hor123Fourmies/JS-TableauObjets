@@ -1,0 +1,36 @@
+body{
+    background: darkred;
+}
+
+#tableauImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tableauTexte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texte{
+    margin: 20px;
+    font-family: "Comic Sans MS";
+    color: navajowhite;
+}
+
+#boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bouton{
+    margin: 20px;
+    font-family: "Comic Sans MS";
+    background: navajowhite;
+    color: darkred;
+    font-weight: bold;
+}
