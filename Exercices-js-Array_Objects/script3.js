@@ -24,8 +24,8 @@ $.each(arrObj, function(index, value)
     console.log("affichage age utilisant jQuery ="+value.age);
     // alert(value.age);
     $('#affichagePhoto').append('<img src =" '+arrObj[index].avatar+'">');
-    $('#affichageNom').append(arrObj[index].person);
-    $('#affichageAge').append(arrObj[index].age);
+    $('#affichageNom').append('<span class="nom">'+arrObj[index].person+'</span>');
+    $('#affichageAge').append('<span class="age">'+arrObj[index].age+'</span>');
 });
 
 }

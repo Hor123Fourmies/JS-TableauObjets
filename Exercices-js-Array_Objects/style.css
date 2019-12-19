@@ -21,17 +21,12 @@ body{
 }
 
 
-.texteNom{
+.texte{
     margin: 20px;
     font-family: "Comic Sans MS";
     color: navajowhite;
 }
 
-.texteAge{
-    margin: 20px;
-    font-family: "Comic Sans MS";
-    color: navajowhite;
-}
 
 #boutons{
     display: flex;
