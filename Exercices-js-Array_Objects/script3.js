@@ -15,42 +15,18 @@ var arrObj = [
 
 
 
-var i=0;
+//Méthode utilisant jQuery
 
-$('#affichagePhoto').html('<img src =" '+arrObj[i].avatar+'">');
-$('#affichageNom').html(arrObj[i].person);
-$('#affichageAge').html(arrObj[i].age+ ' ans');
-
-$('#boutonSuivant').on('click', function () {
-
-    i=i+1;
-
-    if (i === arrObj.length){
-        //(i === 3)
-        i=0
-    }
-
-    $('#affichagePhoto').html('<img src =" '+arrObj[i].avatar+'">');
-    $('#affichageNom').html(arrObj[i].person);
-    $('#affichageAge').html(arrObj[i].age);
-
-
+function test(){
+$.each(arrObj, function(index, value)
+{
+    //Afficher la propriété age pour chaque objet contenu dans mon tableau
+    console.log("affichage age utilisant jQuery ="+value.age);
+    // alert(value.age);
+    $('#affichagePhoto').append('<img src =" '+arrObj[index].avatar+'">');
+    $('#affichageNom').append(arrObj[index].person);
+    $('#affichageAge').append(arrObj[index].age);
 });
 
-
-$('#boutonPrecedent').on('click', function () {
-
-    i=i-1;
-
-    if (i === -1){
-        i=arrObj.length-1
-        // i= 2
-    }
-
-
-    $('#affichagePhoto').html('<img src =" '+arrObj[i].avatar+'">');
-    $('#affichageNom').html(arrObj[i].person);
-    $('#affichageAge').html(arrObj[i].age);
-
-
-});
+}
+test();
